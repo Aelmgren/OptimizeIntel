@@ -1,30 +1,10 @@
-Agency Jekyll theme
+OptimizeIntel
 ====================
 
-Agency theme based on [Agency bootstrap theme ](https://startbootstrap.com/template-overviews/agency/)
-
-# How to use
-
-###Portfolio 
-
-Portfolio projects are in '/_posts'
-
-Images are in '/img/portfolio'
-
-###About
-
-Images are in '/img/about/'
-
-###Team
-
-Team members and info are in '_config.yml'
-
-Images are in '/img/team/'
+Source for OptimizeIntel agency landing page, based on [Agency bootstrap theme ](https://startbootstrap.com/template-overviews/agency/)
 
 
 # Demo
 
-View this jekyll theme in action [here](https://y7kim.github.io/agency-jekyll-theme)
+See the site live here: [here](https://aelmgren.github.io/OptimizeIntel)
 
-=========
-For more details, read [documentation](http://jekyllrb.com/)
