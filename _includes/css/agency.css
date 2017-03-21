@@ -7,7 +7,7 @@
 
     @font-face {
         font-family: Sansus;
-            src: url(Sansus-Webissimo-Regular.ttf);
+            src: url(./css/font-awesome/fonts/Sansus-Webissimo-Regular.ttf);
             }
 
 body {
@@ -178,12 +178,18 @@ fieldset[disabled] .btn-xl.active {
 
 .navbar-default {
     border-color: transparent;
-    background-color: #222;
+    background-color: white;
+    background:linear-gradient(rgba(0,0,0,0.7), transparent)
+}
+
+.navbar-shrink {
+background:white;
 }
 
 .navbar-default .navbar-brand {
     font-family: "Sansus","Kaushan Script","Helvetica Neue",Helvetica,Arial,cursive;
-    color: #{{ site.data.template.color.primary }};
+    color:white;
+/*     color: #{{ site.data.template.color.primary }}; */
 }
 
 .navbar-default .navbar-brand:hover,
@@ -225,7 +231,7 @@ fieldset[disabled] .btn-xl.active {
 .navbar-default .nav li a:hover,
 .navbar-default .nav li a:focus {
     outline: 0;
-    color: #{{ site.data.template.color.primary }};
+    color: #{{ site.data.template.color.secondary }};
 }
 
 .navbar-default .navbar-nav>.active>a {
@@ -244,7 +250,7 @@ fieldset[disabled] .btn-xl.active {
     .navbar-default {
         padding: 25px 0;
         border: 0;
-        background-color: transparent;
+/*         background-color: transparent; */
         -webkit-transition: padding .3s;
         -moz-transition: padding .3s;
         transition: padding .3s;
@@ -262,20 +268,25 @@ fieldset[disabled] .btn-xl.active {
     }
 
     .navbar-default.navbar-shrink {
-        padding: 10px 0;
-        background-color: #222;
+        padding: 0px 0;
+        background-color:white;
+        box-shadow: 0 0 0.6em 0 rgba(0,0,0,.4);
     }
 
     .navbar-default.navbar-shrink .navbar-brand {
         font-size: 1.5em;
+        color:#1A2C56;
+    }
+    .navbar-shrink .nav li a {
+      color: #1A2C56;
     }
 }
 
 header {
     text-align: center;
     color: #fff;
-    background-attachment: scroll;
-    background-image: url('{{ site.baseurl }}/img/header-bg.jpg');
+    background-attachment: fixed;
+    background-image: url('{{ site.baseurl }}/img/about/macbook-ga-data.jpg');
     background-position: center center;
     background-repeat: none;
     -webkit-background-size: cover;
@@ -288,13 +299,21 @@ header .intro-text {
     padding-top: 100px;
     padding-bottom: 50px;
 }
+header .intro-text .btn-xl {
+    display:none;
+}
 
 header .intro-text .intro-lead-in {
     margin-bottom: 25px;
-    font-family: {{ site.data.template.font.secondary }};
+/*     font-family: {{ site.data.template.font.secondary }}; */
+font-family: "Helvetica Neue", Helvetica,Arial,sans-serif;
+
     font-size: 22px;
-    font-style: italic;
+/*     font-style: italic; */
     line-height: 22px;
+    background:black;
+    padding:5px;
+    text-align:left;
 }
 
 header .intro-text .intro-heading {
@@ -303,21 +322,28 @@ header .intro-text .intro-heading {
     font-family: {{ site.data.template.font.primary }};
     font-size: 50px;
     font-weight: 700;
-    line-height: 50px;
+    line-height: 40px;
+        text-align: left;
+    background: black;
+    width: 85%;
 }
 
 @media(min-width:768px) {
     header .intro-text {
         padding-top: 300px;
-        padding-bottom: 200px;
+        padding-bottom: 300px;
+        margin-top:-100px;
     }
 
     header .intro-text .intro-lead-in {
         margin-bottom: 25px;
-        font-family: {{ site.data.template.font.secondary }};
+/*         font-family: {{ site.data.template.font.secondary }}; */
+font-family: "Helvetica Neue", Helvetica,Arial,sans-serif;
+
         font-size: 40px;
-        font-style: italic;
-        line-height: 40px;
+/*         font-style: italic; */
+        line-height: 41px;
+        text-align:left;
     }
 
     header .intro-text .intro-heading {
@@ -326,10 +352,12 @@ header .intro-text .intro-heading {
         font-family: {{ site.data.template.font.primary }};
         font-size: 75px;
         font-weight: 700;
-        line-height: 75px;
+        line-height: 45px;
     }
 }
-
+#info-container {
+    padding:0px;
+}
 section {
     padding: 100px 0;
 }
@@ -769,7 +797,7 @@ ul.social-buttons li a {
 ul.social-buttons li a:hover,
 ul.social-buttons li a:focus,
 ul.social-buttons li a:active {
-    background-color: #{{ site.data.template.color.primary }};
+    background-color: #{{ site.data.template.color.secondary }};
 }
 
 .btn:focus,
